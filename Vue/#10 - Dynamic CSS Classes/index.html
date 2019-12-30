@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Dynamic CSS Classes</title>
+  </head>
+  <body>
+    <div id="vue-app">
+      <h1>Dynamic CSS Classes</h1>
+
+      <h2>Example 1</h2>
+      <div
+        v-on:click="available = !available"
+        v-bind:class="{available: available}"
+      >
+        <span>Gilang</span>
+      </div>
+
+      <h2>Example 2</h2>
+      <button v-on:click="nearby = !nearby">Toggle Nearby</button>
+      <button v-on:click="available = !available">Toggle Available</button>
+
+      <div v-bind:class="compClass">
+        <span>Gilang</span>
+      </div>
+    </div>
+  </body>
+
+  <script src="app.js"></script>
+</html>
