@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>2-Ways Data Binding</title>
+  </head>
+  <body>
+    <div id="vue-app">
+      <h1>2-Ways Data Binding</h1>
+      <label for="name">Name:</label>
+      <input type="text" v-model="name" />
+      <span>{{name}}</span>
+      <br />
+      <label for="age">Age:</label>
+      <input type="text" v-model="age" />
+      <span>{{age}}</span>
+    </div>
+  </body>
+
+  <script src="app.js"></script>
+</html>
