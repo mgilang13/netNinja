@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Multiple View</title>
+  </head>
+  <body>
+    <h1>Multiple View</h1>
+
+    <div id="vue-app-one">
+      <h2>{{title}}</h2>
+      <p>{{greet}}</p>
+    </div>
+    <div id="vue-app-two">
+      <h2>{{title}}</h2>
+      <p>{{greet}}</p>
+      <button v-on:click="changeTitle">Change App 1 Title</button>
+    </div>
+  </body>
+
+  <script src="app.js"></script>
+</html>
