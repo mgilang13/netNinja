@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Looping with v-for</title>
+  </head>
+  <body>
+    <div id="vue-app">
+      <h1>Looping with list</h1>
+      <ul>
+        <li v-for="character in characters">{{ character }}</li>
+      </ul>
+      <ul>
+        <li v-for="(employee,index) in employees">
+          {{index}} . {{employee.name}} - {{employee.age}}
+        </li>
+      </ul>
+
+      <template v-for="(employee,index) in employees">
+        <h3>{{index}}. {{employee.name}}</h3>
+        <p>{{employee.age}}</p>
+      </template>
+
+      <template v-for="employee in employees">
+        <div v-for="(val, key) in employee">
+          <p>{{key}} - {{val}}</p>
+        </div>
+      </template>
+    </div>
+  </body>
+
+  <script src="app.js"></script>
+</html>
