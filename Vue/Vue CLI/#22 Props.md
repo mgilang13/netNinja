@@ -1,5 +1,7 @@
 ## Props
 
+![](./image/props.png)
+
 Props digunakan untuk mendistribusikan data dari root component ke component di bawahnya. Sehingga apabila ada beberapa component yang membutuhkan beberapa data misalnya, maka kita tidak perlu menggandakan component itu sendiri, tinggal dipanggil saja props yang ada di root component. Cara memanggilnya adalah sebagai berikut:
 
 `props: ["employees"],`

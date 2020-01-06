@@ -2,6 +2,8 @@
 
 Di dalam vue, bagian-bagian yang bergabung menjadi 1 kesatuan tampilan web disebut dengan `component`. Kalau diibaratkan seperti sebuah rumah, ada bagian yang namanya pintu, jendela, lantai, dapur, dsb. Begitu pula dengan website, di dalamnya ada header, footer, content, aside, article, dsb. Semua itu di dalam vue disatukan dalam sebuah komponen, sehingga memudahkan dalam error debugging
 
+![](./image/component.png)
+
 Dalam materi ini, kita akan membuat 3 jenis component di dalam folder `components` yaitu
 
 ```
